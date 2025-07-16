@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fab0c4"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/landingPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!-- Account Summary Title -->
+        <TextView
+            android:text="Account Summary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Account Details Box -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/rounded_box"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/accountNumberTextView"
+                android:text="Account Number: "
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/sortCodeTextView"
+                android:text="Sort Code: "
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/balanceTextView"
+                android:text="Balance: "
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/interestAccruedTextView"
+                android:text="Available rewards: "
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Card Summary Title -->
+        <TextView
+            android:text="Card Summary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Card Details Box -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/rounded_box"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/cardNumberTextView"
+                android:text="Card Number: "
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/cvvTextView"
+                android:text="CVV: "
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/expiryDateTextView"
+                android:text="Expiry Date: "
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Amount Input -->
+        <EditText
+            android:id="@+id/amountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter amount"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/depositBtn"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deposit"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/withdrawBtn"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Withdraw"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/purchaseBtn"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/accrueInterestBtn"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accrue Interest For All Accounts"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/transactionsBtn"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transactions" />
+
+    </LinearLayout>
+</ScrollView>

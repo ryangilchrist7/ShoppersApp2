@@ -1,0 +1,31 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/accent_teal</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="buttonStyle">@style/AppButton</item>
+    </style>
+
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#000000</item>
+        <item name="android:textColor">#fab0c4</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="RegistrationHintText">
+        <item name="android:textColorHint">#80000000</item>
+    </style>
+
+    <style name="RegistrationInputStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:drawable/edit_text</item>
+        <item name="android:textColor">#000000</item>
+        android:textAppearance="@style/RegistrationHintText"
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/registerFormScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fab0c4"
+    android:padding="24dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center_horizontal">
+
+<TextView
+    android:text="Create Account"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="#000000"
+    android:layout_marginBottom="24dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+<EditText
+    android:id="@+id/firstNameEditText"
+    android:hint="First Name"
+    style="@style/RegistrationInputStyle" />
+
+<EditText
+    android:id="@+id/lastNameEditText"
+    android:hint="Last Name"
+    style="@style/RegistrationInputStyle" />
+
+<EditText
+    android:id="@+id/dobEditText"
+    android:hint="Date of Birth (YYYY-MM-DD)"
+    android:inputType="date"
+    style="@style/RegistrationInputStyle" />
+
+<EditText
+    android:id="@+id/phoneEditText"
+    android:hint="Phone Number"
+    android:inputType="phone"
+    style="@style/RegistrationInputStyle" />
+
+<EditText
+    android:id="@+id/addressEditText"
+    android:hint="Address"
+    android:inputType="textPostalAddress"
+    style="@style/RegistrationInputStyle" />
+
+<EditText
+    android:id="@+id/emailEditText"
+    android:hint="Email"
+    android:inputType="textEmailAddress"
+    style="@style/RegistrationInputStyle" />
+
+<EditText
+    android:id="@+id/passwordEditText"
+    android:hint="Password"
+    android:inputType="textPassword"
+    style="@style/RegistrationInputStyle" />
+
+<Button
+    android:id="@+id/registerButton"
+    style="@style/AppButton"
+    android:text="Register"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:elevation="4dp" />
+
+<TextView
+    android:id="@+id/switchToLoginTextView"
+    android:text="Already have an account? Login"
+    android:textColor="#000000"
+    android:textSize="14sp"
+    android:layout_marginTop="16dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</LinearLayout>
+    </ScrollView>
